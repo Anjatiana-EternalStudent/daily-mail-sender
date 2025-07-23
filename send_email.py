@@ -4,8 +4,11 @@ from email.mime.text import MIMEText
 
 load_dotenv()
 
-subject = "Test"
-body = "Test"
+subject = "Notification automatique"
+body = """
+    Bonjour,
+    Passez une bonne journée !
+"""
 sender = os.getenv("EMAIL")
 recipients = os.getenv("RECIPIENTS").split(",")
 password = os.getenv("MDP")
