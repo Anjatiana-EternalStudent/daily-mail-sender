@@ -42,4 +42,4 @@ Le workflow est défini dans `.github/workflows/daily.yml`. Il:
 4. Le mail s'enverra automatiquement selon le planning (peut aussi être envoyé ,manuellement)
 
 ## Remarques
-* Le mot de passe utilisé n'est pas celui du compte Gmail mais un mot de passe d'application que lmoin génère depuis le [compte google](https://myaccount.google.com/apppasswords).
+* Le mot de passe utilisé n'est pas celui du compte Gmail mais un mot de passe d'application que l'on génère depuis le [compte google](https://myaccount.google.com/apppasswords).
