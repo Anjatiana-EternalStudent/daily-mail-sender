@@ -1,12 +1,13 @@
 from dotenv import load_dotenv
-import smtplib, os, datetime
+import smtplib, os
 from email.mime.text import MIMEText
 from get_quote import get_random_quote
+from datetime import date
 
 load_dotenv()
 
 citation = get_random_quote()
-subject = f"Today is {datetime.date.today()}"
+subject = f"Today is {date.today()}"
 body = f"""
     Hello, here is your daily quote
 
