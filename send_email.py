@@ -1,13 +1,16 @@
 from dotenv import load_dotenv
-import smtplib, os
+import smtplib, os, datetime
 from email.mime.text import MIMEText
+from get_quote import get_random_quote
 
 load_dotenv()
 
-subject = "Notification automatique"
-body = """
-    Bonjour,
-    Passez une bonne journée !
+citation = get_random_quote()
+subject = f"Today is {datetime.date.today()}"
+body = f"""
+    Hello, here is your daily quote
+
+    {citation}
 """
 sender = os.getenv("EMAIL")
 recipients = os.getenv("RECIPIENTS").split(",")
