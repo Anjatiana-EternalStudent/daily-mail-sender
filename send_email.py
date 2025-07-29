@@ -12,6 +12,8 @@ body = f"""
     Hello, here is your daily quote
 
     {citation}
+
+    Have a nice day.
 """
 sender = os.getenv("EMAIL")
 recipients = os.getenv("RECIPIENTS").split(",")
